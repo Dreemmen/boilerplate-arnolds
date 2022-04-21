@@ -1,0 +1,119 @@
+#update-browser-notification-wrap { display: none !important; }
+
+.update-browser-notification-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 68, 68);
+    opacity: .8;
+}
+
+.update-browser-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.show-browser-notice #update-browser-notification-wrap { display: block !important; }
+
+.update-browser-notification .ubn-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.update-browser-notification .ubn-cell {
+    display: table-cell;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+}
+
+.update-browser-notification .ubn-outer {
+    width: 90%;
+    max-width: 1064px;
+    margin: 0 auto;
+    padding: 38px 30px 47px;
+    background-color: #fff;
+}
+
+.update-browser-notification .ubn-inner {
+    max-width: 855px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.update-browser-notification .ubn-text {
+    margin-bottom: 35px;
+    color: #808080;
+}
+
+.update-browser-notification .ubn-title {
+    margin-bottom: 16px;
+    font-size: 31px;
+    font-weight: 700;
+    color: #808080;
+    letter-spacing: .01em;
+}
+
+.update-browser-notification .ubn-p {
+    margin-bottom: 8px;
+    font-size: 16px;
+    letter-spacing: .01em;
+    line-height: 28px;
+}
+.update-browser-notification .ubn-p.last { margin-bottom: 0; }
+
+.update-browser-notification .ubn-icon-wrap {
+    margin: 0 -30px;
+    font-size: 0;
+}
+
+.update-browser-notification .ubn-icon-wrap:before,
+.update-browser-notification .ubn-icon-wrap:after {
+    display: table;
+    content: '';
+}
+.update-browser-notification .ubn-icon-wrap:after { clear: both; }
+
+.update-browser-notification .ubn-browser-link {
+    display: inline-block;
+    width: 183px;
+    margin-bottom: 42px;
+    padding: 0 15px;
+}
+
+.update-browser-notification .ubn-browser-icon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    background-image: url('./browsers.png');
+    background-repeat: no-repeat;
+}
+.update-browser-notification .ubn-browser-link-firefox .ubn-browser-icon { background-position: 0 0; }
+.update-browser-notification .ubn-browser-link-chrome .ubn-browser-icon { background-position: -100px 0; }
+.update-browser-notification .ubn-browser-link-edge .ubn-browser-icon { background-position: -200px 0; }
+.update-browser-notification .ubn-browser-link-opera .ubn-browser-icon { background-position: -300px 0; }
+.update-browser-notification .ubn-browser-link-safari .ubn-browser-icon { background-position: -400px 0; }
+
+.update-browser-notification .ubn-browser-name {
+    font-size: 16px;
+    color: #808080;
+}
+
+.update-browser-notification .ubn-close {
+    display: inline-block;
+    min-width: 180px;
+    height: 43px;
+    font-size: 15px;
+    line-height: 43px;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #333;
+}

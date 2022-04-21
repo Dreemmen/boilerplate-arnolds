@@ -1,0 +1,28 @@
+.site-content--404 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.c-404__title {
+    margin-bottom: -10px;
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.c-404__sub-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.c-404__message { margin-bottom: 46px; }

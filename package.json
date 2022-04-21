@@ -1,0 +1,39 @@
+{
+    "name": "sem-lv-frontend-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "dev": "npm run wp:dev && npm run html",
+        "wp:dev": "webpack --mode development",
+        "prod": "npm run wp:prod && npm run html",
+        "wp:prod": "webpack --mode production",
+        "html": "html-includes --src src/html --dest dist",
+        "watch": "parallelshell \"html-includes --src src/html --dest dist --watch\" \"webpack --watch --mode development --env watchmode=1\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "IE 10",
+        "IE 11"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.3.6",
+        "clean-webpack-plugin": "^4.0.0",
+        "copy-webpack-plugin": "^9.0.1",
+        "css-loader": "^6.3.0",
+        "html-includes": "^4.4.1",
+        "mini-css-extract-plugin": "^2.3.0",
+        "parallelshell": "^3.0.1",
+        "postcss-loader": "^6.1.1",
+        "sass": "^1.42.1",
+        "sass-loader": "^12.1.0",
+        "webpack": "^5.55.1",
+        "webpack-cli": "^4.8.0"
+    },
+    "dependencies": {}
+}
